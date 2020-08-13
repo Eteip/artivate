@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<<<<<<< HEAD
+
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -21,8 +21,6 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-=======
->>>>>>> 72853216edc506fbabc97c550e99e09c0935a49a
 
         
         <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}">
@@ -33,6 +31,14 @@
             <link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}">
             <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
         {% endblock %}
+
+
+        <meta name="google" content="notranslate"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+        <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     </head>
 
@@ -64,7 +70,7 @@
             {% for message in messages %}
                 <p><center id="messages">{{message}}</center></p>
             {% endfor %}
-        </div>
+
 
         {% block content %}
         <!-- Content Goes here -->
