@@ -1,4 +1,7 @@
-{% load static %}
+{% extends "registration/base.html" %} {% load static %}
+{% load socialaccount %}
+{% providers_media_js %}
+{% block content %}
 <!DOCTYPE html>
 <html>
     
@@ -51,6 +54,12 @@
 				</div>
 		
 				<div class="mt-4">
+					<div class="d-flex justify-content-center links"> 
+						<a href="{% provider_login_url "google"  %}" class="ml-2">Login With Google</a>
+				 </div>
+				 <div class="d-flex justify-content-center links"> 
+					<a href="{% provider_login_url "facebook"  method="oauth2" %}" class="ml-2">Login With Facebook</a>
+			 	</div>
 					<div class="d-flex justify-content-center links">
 						Don't have an account? <a style="color:white;" href="{% url 'register' %}" class="ml-2"><strong>Sign Up</strong></a>
 					</div>
@@ -59,8 +68,19 @@
 					</div>
 				</div>
 			</div>
+			<!-- <div class="container h-100">
+				<div class="d-flex justify-content-center h-100">
+					<div class="user_card">
+						<div class="d-flex justify-content-center links"> 
+						<a href="{% provider_login_url "google"  %}" class="ml-2">Login With Google</a>
+				 </div>
+			</div>
+			</div> -->
+			</div>
 		</div>
 	</div>
 </body>
 
 </html>
+
+{% endblock %}
