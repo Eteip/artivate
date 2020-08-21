@@ -9,6 +9,7 @@ verify_ssl = true
 django = "*"
 django-allauth = "*"
 six = "*"
+django-environ = "*"
 
 [requires]
 python_version = "3.6"
